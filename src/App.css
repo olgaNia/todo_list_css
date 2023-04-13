@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    /*div это блок,margin для определения расстояния между блоками,внешние границы блока*/
+    padding: 0;
+    /*расстояние от внутреннего элемента до границ самого блока*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+    border: 1px solid green;
+    border-radius: 20px;
+    background-color: #386d13;
+    color: #ebd326;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    background: linear-gradient(to right bottom, #52f8eb, #0e3633);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-wrapper {
+    background-color: rgba(201, 248, 121, 0.72);
+    min-width: 300px;
+    min-height: 600px;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px rgb(17, 56, 19);
+    margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input {
+    outline: none;
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #093d3a;
+    background-color: rgb(227, 212, 114);
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(30, 73, 52);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-add {
+    width: 70px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: rgba(8, 53, 6, 0.43);
+    color: rgb(230, 216, 131);
+    box-shadow: 3px 3px 10px rgb(108, 149, 45);
+    cursor: pointer;
+}
+
+.button-complete {
+    width: 30px;
+    height: 30px;
+    color: #166a12;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: #e4e3b5;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.button-delete {
+    width: 30px;
+    height: 30px;
+    color: #f80707;
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: #e4e3b5;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.button-edit {
+    width: 30px;
+    height: 30px;
+    color: #d2a320;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: #e4e3b5;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.completed {
+    text-decoration-style: double;
+    text-decoration-line: line-through;
+    text-decoration-color: #de0909;
+}
+
+.list {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid green;
+    font-size: 20px;
+    color: #093d3a;
+    border-radius: 5px;
+    background-color: #e4e3b5;
+
+    box-shadow: 3px 3px 10px rgb(108, 149, 45);
 }
